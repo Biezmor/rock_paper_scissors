@@ -17,12 +17,19 @@ function getComputerChoice (rock, paper, scissors) {
     return "paper";
  } else if (result === 3) {
     return "scissors";
- } else {
-    return "Error, try again!"
  }
 }
 console.log(getComputerChoice());
 
 function getHumanChoice (rock, paper, scissors) {
-
+    let answer = prompt("What will you choose?", "");
+if (answer == "rock") {
+    return "rock";
+} else if (answer == "paper") {
+    return "paper";
+} else if (answer == "scissors") {
+    return "scissors";
+};
 }
+
+console.log(getHumanChoice());
