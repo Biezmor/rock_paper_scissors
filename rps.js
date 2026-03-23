@@ -11,7 +11,18 @@
 
 function getComputerChoice (rock, paper, scissors) {
  let result = (Math.ceil(Math.random() * 3));
- return result;
+ if (result === 1) {
+    return "rock";
+ } else if (result === 2) {
+    return "paper";
+ } else if (result === 3) {
+    return "scissors";
+ } else {
+    return "Error, try again!"
+ }
 }
+console.log(getComputerChoice());
 
-getComputerChoice();
+function getHumanChoice (rock, paper, scissors) {
+
+}
