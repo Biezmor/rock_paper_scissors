@@ -68,7 +68,6 @@ function playGame () {
             againButton.textContent = "Play again";
              
             againButton.addEventListener("click", function () {
-                //window.location.reload();
                 humanScore = 0;
                 computerScore = 0;
                 const reset = document.querySelectorAll(".resultBox");
